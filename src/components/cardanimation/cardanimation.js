@@ -20,7 +20,7 @@ export const CardAnimation = () => {
   return (
     <>
     <Navbar/>
-    <div style={{height: "100vh"}}>
+    <div style={{height: "60vh"}}>
     <HoverText text="SIMPLY JET" transformOrigin={"bottom center"}/>
     </div>
     
