@@ -1,0 +1,13 @@
+.box-icon{
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.fa-paper-plane:before {
+    content: "\f1d8";
+}
+
+.pt78{
+    padding-top: 120px;
+}

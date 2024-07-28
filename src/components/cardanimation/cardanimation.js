@@ -4,6 +4,7 @@ import HoverText from "../hovertext/hovertext.js";
 import Navbar, { Navbars } from "../navbar/navbar.js";
 import Footer from "../footer/footer.js";
 import WordList from "../list/list.js";
+import ContactInfo from "../contact/contact.js";
 
 export const CardAnimation = () => {
   const ref = useRef(null);
@@ -20,7 +21,7 @@ export const CardAnimation = () => {
     <>
     <Navbar/>
     <div style={{height: "100vh"}}>
-    <HoverText text="SIMPLY JET!" transformOrigin={"bottom center"}/>
+    <HoverText text="SIMPLY JET" transformOrigin={"bottom center"}/>
     </div>
     
       <div ref={ref} className="relative">
@@ -35,8 +36,9 @@ export const CardAnimation = () => {
           />
         ))}
       </div>
-      <div className="h-screen bg-black"   >
+      <div className="h-screen"   >
       <WordList/>
+      <ContactInfo/>
       <HoverText text="OUR STUDIO" transformOrigin={"top center"}/>
       <Footer/>
       </div>
@@ -53,7 +55,7 @@ const Card = ({ position, card }) => {
     target: targetRef,
     offset: ["end end", "end start"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], [.95, 1]);
   return (
     <motion.div
       style={{

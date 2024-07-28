@@ -19,7 +19,7 @@ const Footer = () => {
         onClick={handleScrollToTop}
         whileHover={{ color: '#00f' }}
       >
-        ↑ Back to Top
+        <i class="fa-solid fa-angle-up"></i> Back to Top
       </motion.div>
       <div
         className="social-container"
@@ -31,6 +31,7 @@ const Footer = () => {
           whileHover={{ y: -20 }}
         >
           Follow
+          <i class="fa-solid fa-share-nodes"></i>
         </motion.div>
         <AnimatePresence>
           {hovered && (

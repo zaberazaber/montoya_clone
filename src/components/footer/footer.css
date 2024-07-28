@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap'); */
 
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Six Caps', sans-serif;
+  font-family: sans-serif;
 }
 
 .app-container {
@@ -40,6 +40,9 @@ body, html {
 
 .back-to-top {
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .social-container {
@@ -50,6 +53,10 @@ body, html {
 
 .follow {
   cursor: pointer;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
 
