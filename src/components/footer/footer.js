@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './footer.css';
 
 const Footer = () => {
+  const [hovered, setHovered] = useState(false);
+
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
-
-  const [hovered, setHovered] = useState(false);
 
   return (
     <footer className="footer">
@@ -21,7 +21,7 @@ const Footer = () => {
       >
         ↑ Back to Top
       </motion.div>
-      <div 
+      <div
         className="social-container"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

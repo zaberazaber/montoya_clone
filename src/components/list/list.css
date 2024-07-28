@@ -1,0 +1,26 @@
+
+
+body {
+  font-family: 'Six Caps', sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.word-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.word {
+    margin: 0px 0;
+    padding: 0px;
+    font-size: calc(1rem + 13vw);
+    line-height: calc(1rem + 12.5vw);
+    text-transform: lowercase;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }

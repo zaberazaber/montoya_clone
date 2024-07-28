@@ -1,49 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background: transparent;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    z-index: 1000;
-  }
-  
-  .back-to-top {
-    cursor: pointer;
-  }
-  
-  .social-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .follow {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .icons {
-    display: flex;
-    margin-left: 10px;
-  }
-  
-  .icon {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .icon:hover {
-    color: #00f;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.word-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.word {
+  margin: 20px 0;
+  font-size: calc(1rem + 13vw);
+  line-height: calc(1rem + 12.5vw);
+  text-transform: lowercase;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer {
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.back-to-top {
+  cursor: pointer;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.follow {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.icon {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #00f;
+}
