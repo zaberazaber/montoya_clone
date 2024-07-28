@@ -2,6 +2,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import HoverText from "../hovertext/hovertext.js";
 import Navbar, { Navbars } from "../navbar/navbar.js";
+import Footer from "../footer/footer.js";
 
 export const CardAnimation = () => {
   const ref = useRef(null);
@@ -36,6 +37,7 @@ export const CardAnimation = () => {
       <div className="h-screen bg-black" >
       <HoverText text="OUR STUDIO" transformOrigin={"top center"}/>
       </div>
+      <Footer/>
     </>
   );
 };
